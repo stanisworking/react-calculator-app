@@ -4,7 +4,10 @@ import ComputationScreen from './ComputeScreen/ComputeScreen';
 
 const screen = () => {
 	return (
-		<section className='right-align red lighten-4' style={{ padding: '10px' }}>
+		<section
+			className='right-align red lighten-4'
+			style={{ height: '25vh', padding: '10px' }}
+		>
 			<ResultScreen />
 			<ComputationScreen />
 		</section>
