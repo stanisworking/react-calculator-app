@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { evaluate } from 'mathjs';
+
 import Screen from './Screen/Screen';
 import Keypad from './Keypad/Keypad';
 
@@ -30,7 +32,7 @@ class calculator extends Component {
 		} else if (pressedButton === BTN_EQUAL) {
 			try {
 				const finalEquation = equation.replace(/x/g, '*'); // Replace 'x' with actual '*' so that it can be evaluated
-				const evalResult = eval(finalEquation);
+				const evalResult = evaluate(finalEquation);
 				const result = Number.isInteger(evalResult)
 					? evalResult
 					: evalResult.toFixed(2);
