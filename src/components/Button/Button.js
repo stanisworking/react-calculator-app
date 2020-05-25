@@ -11,6 +11,7 @@ const button = (props) => {
 						margin: '0',
 						padding: '0',
 					}}
+					onClick={props.onButtonPress}
 				>
 					<h4>{props.children}</h4>
 				</div>
@@ -22,6 +23,7 @@ const button = (props) => {
 		<div
 			className='waves-effect btn-flat btn-large'
 			style={{ width: '25%', height: '100%', margin: '0', padding: '0' }}
+			onClick={props.onButtonPress}
 		>
 			<h4>{props.children}</h4>
 		</div>
