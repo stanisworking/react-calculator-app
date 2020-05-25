@@ -3,7 +3,7 @@ import Screen from './Screen/Screen';
 import Keypad from './Keypad/Keypad';
 
 const BTN_CLEAR = 'C';
-const BTN_OPERATOR = ['+', '-', 'x', '/', '%'];
+const BTN_OPERATOR = ['+', '-', '*', '/', '%'];
 const BTN_EQUAL = '=';
 
 class calculator extends Component {
