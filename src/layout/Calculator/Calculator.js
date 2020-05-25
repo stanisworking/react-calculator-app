@@ -29,7 +29,8 @@ class calculator extends Component {
 			equation += ' ' + pressedButton + ' ';
 		} else if (pressedButton === BTN_EQUAL) {
 			try {
-				const evalResult = eval(equation);
+				const finalEquation = equation.replace(/x/g, '*'); // Replace 'x' with actual '*' so that it can be evaluated
+				const evalResult = eval(finalEquation);
 				const result = Number.isInteger(evalResult)
 					? evalResult
 					: evalResult.toFixed(2);
