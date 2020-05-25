@@ -1,7 +1,7 @@
 import React from 'react';
 
 const resultScreen = (props) => {
-	return <h3>{props.children}</h3>;
+	return <h2>{props.children}</h2>;
 };
 
 export default resultScreen;
